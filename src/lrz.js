@@ -75,7 +75,9 @@ Lrz.prototype.init = function () {
 
     return new Promise(function (resolve, reject) {
         img.onerror = function () {
-            throw new Error('加载图片文件失败');
+            var err = new Error('加载图片文件失败');
+            reject(err);
+            throw err;
         };
 
         img.onload = function () {
