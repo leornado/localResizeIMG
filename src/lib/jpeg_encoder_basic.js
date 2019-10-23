@@ -162,8 +162,8 @@ function JPEGEncoder (l) {
         var aL, aK, aJ, aI, aH, aD, aC, aB;
         var aN   = 0;
         var aR;
-        const aq = 8;
-        const ai = 64;
+        var aq = 8;
+        var ai = 64;
         for (aR = 0; aR < aq; ++aR) {
             aL         = aZ[aN];
             aK         = aZ[aN + 1];
@@ -355,9 +355,9 @@ function JPEGEncoder (l) {
         var ag   = ap[0];
         var ab   = ap[240];
         var ac;
-        const ar = 16;
-        const ai = 63;
-        const ah = 64;
+        var ar = 16;
+        var ai = 63;
+        var ah = 64;
         var aq   = N(ad, aa);
         for (var am = 0; am < ah; ++am) {
             S[i[am]] = aq[am]
